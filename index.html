@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unblocked Games Hub</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        header {
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 20px 0;
+        }
+        .game-card {
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            border: none;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+        }
+        .game-card img {
+            border-radius: 10px 10px 0 0;
+        }
+        .game-card .btn {
+            background: #2575fc;
+            border: none;
+        }
+        .game-card .btn:hover {
+            background: #6a11cb;
+        }
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="text-center">
+        <h1>Unblocked Games Hub</h1>
+        <p>Play your favorite games anytime, anywhere!</p>
+    </header>
+
+    <!-- Games Section -->
+    <section class="container mt-5" id="games">
+        <div class="row">
+            <!-- Your Game -->
+            <div class="col-md-6">
+                <div class="card game-card">
+                    <img src="https://i.imgur.com/3QZQZQZ.png" class="card-img-top" alt="Your Game">
+                    <div class="card-body">
+                        <h5 class="card-title">Your Game</h5>
+                        <p class="card-text">Play this awesome game!</p>
+                        <a href="#your-game-modal" class="btn btn-primary" data-toggle="modal">Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Snake Game -->
+            <div class="col-md-6">
+                <div class="card game-card">
+                    <img src="https://i.imgur.com/4QZQZQZ.png" class="card-img-top" alt="Snake Game">
+                    <div class="card-body">
+                        <h5 class="card-title">Snake Game</h5>
+                        <p class="card-text">Classic Snake game. Eat the food and grow!</p>
+                        <a href="#snake-modal" class="btn btn-primary" data-toggle="modal">Play Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        © 2025 Unblocked Games Hub. All rights reserved.
+    </footer>
+
+    <!-- Modals for Games -->
+    <!-- Your Game Modal -->
+    <div class="modal fade" id="your-game-modal" tabindex="-1" role="dialog" aria-labelledby="your-game-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="your-game-modal-label">Your Game</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="460" src="https://academy.cs.cmu.edu/sharing/turquoiseElephant8543/embed" style="border: none;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Snake Game Modal -->
+    <div class="modal fade" id="snake-modal" tabindex="-1" role="dialog" aria-labelledby="snake-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="snake-modal-label">Snake Game</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://snake-game-unblocked.netlify.app/" width="100%" height="600px" style="border: none;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
